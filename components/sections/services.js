@@ -43,13 +43,13 @@ const StyledServices = styled.section`
       .cards {
         display: flex;
         flex-direction: row;
-        gap: 25px;
+        gap: 35px;
 
         .cards-left,
         .cards-right {
           display: flex;
           flex-direction: column;
-          gap: 15px;
+          gap: 35px;
 
           button {
             background-color: var(--secondary-color);
@@ -64,10 +64,15 @@ const StyledServices = styled.section`
             justify-content: center;
             padding: 20px;
             display: flex;
-            gap: 5px;
+            gap: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
             width: 100%;
             height: 225px;
+
+            :hover {
+              transition: 0.2s;
+              transform: scale(1.1);
+            }
 
             span {
               position: relative;
@@ -96,14 +101,25 @@ const StyledServices = styled.section`
       display: flex;
       flex-direction: column;
       gap: 30px;
+      position: relative;
 
       .desc {
-        border-left: 4px solid var(--main-color);
         padding-left: 20px;
 
-        font-size: 0.9rem;
-        font-weight: 300;
+        font-size: 1rem;
+        font-weight: 400;
         text-indent: 20px;
+        line-height: 25px;
+      }
+
+      .desc:before {
+        content: '';
+        position: absolute;
+        top: 20px;
+        left: 15px;
+        width: 5px;
+        height: 70px;
+        background-color: var(--secondary-color);
       }
 
       .image {

@@ -10,25 +10,28 @@ const StyledHeader = styled.section`
     width: var(--main-container-width);
     background: url('/header-bg.png');
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: auto 100%;
+    background-position: bottom right;
+    background-size: 60% auto;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
     color: white;
-    gap: 35px;
+    gap: 45px;
     z-index: 100;
 
     h1 {
-      font-size: 4rem;
+      font-size: 5rem;
       font-weight: 600;
       line-height: normal;
     }
 
     p {
       width: 40%;
+      line-height: 30px;
+      font-size: 1.35rem;
+      font-weight: 200;
     }
 
     button {
@@ -55,7 +58,7 @@ const Header = () => {
           <br />
           Impeccable Look
         </h1>
-        <p>You will leave lookin shara, relaxed and ready to take on the world, with that swagger in your stride.</p>
+        <p>You will leave looking sharp, relaxed and ready to take on the world, with that swagger in your stride.</p>
         <FancyButton title={'Book Appointment'} color={'red'} />
       </div>
     </StyledHeader>

@@ -35,7 +35,7 @@ const Gallery = () => {
   return (
     <StyledGallery>
       <div className="gallery-container">
-        <SectionHeader title={'OUR GALLERY'} color={'#fff'} />
+        <SectionHeader title={'GALLERY'} color={'#fff'} />
         <h1>Enjoy Our Awesome Snapshot</h1>
         <div className="image">
           <Image src="/gallery.jpeg" alt="" layout="fill" objectFit="contain" />;

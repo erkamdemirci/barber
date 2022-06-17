@@ -11,11 +11,15 @@ const StyledAbout = styled.section`
   padding: 50px 0;
 
   .about-container {
-    max-width: 60%;
+    max-width: 70%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px 40px;
+    border: 1px solid rgba(44, 44, 46, 1);
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
   }
 
   h1 {
@@ -39,9 +43,11 @@ const StyledAbout = styled.section`
 
     .left {
       position: relative;
+      flex: 1;
     }
 
     .right {
+      flex: 1.25;
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -52,7 +58,8 @@ const StyledAbout = styled.section`
       }
       .desc {
         font-weight: 200;
-        font-size: 1.25rem;
+        font-size: 1.15rem;
+        text-indent: 20px;
       }
       .right-bottom {
         display: flex;

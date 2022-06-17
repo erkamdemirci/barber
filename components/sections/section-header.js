@@ -6,17 +6,18 @@ const StyledSectionHeader = styled.div`
   flex-direction: column;
   align-items: center;
   font-weight: 700;
-  font-size: 1.25rem;
   padding: 30px 0;
 
   .section-title {
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 2px;
+    font-size: 2rem;
   }
 
   .mustache {
     display: flex;
-    letter-spacing: -2px;
+    justify-content: center;
+    align-items: center;
     font-weight: 100;
     gap: 10px;
     color: white;
@@ -30,9 +31,9 @@ const SectionHeader = ({ title, color }) => {
         {title}
       </span>
       <div className="mustache">
-        <span style={{ color: color }}>----</span>
+        <span style={{ color: color }}>-------------</span>
         <span>
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 1280 640" preserveAspectRatio="xMidYMid meet">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" viewBox="0 0 1280 640" preserveAspectRatio="xMidYMid meet">
             <metadata>Created by potrace 1.15, written by Peter Selinger 2001-2017</metadata>
             <g transform="translate(0.000000,640.000000) scale(0.100000,-0.100000)" fill={'#cea46f'} stroke="none">
               <path
@@ -56,7 +57,7 @@ const SectionHeader = ({ title, color }) => {
             </g>
           </svg>
         </span>
-        <span style={{ color: color }}>----</span>
+        <span style={{ color: color }}>-------------</span>
       </div>
     </StyledSectionHeader>
   );
